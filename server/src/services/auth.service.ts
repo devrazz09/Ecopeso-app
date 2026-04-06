@@ -15,7 +15,21 @@ export async function CreateUser({ userName, hashedPassword } : UserInterface) :
     }catch(error){
         console.log(error)
     }
+}
 
-    
+export async function UserLoginService({ userName }: UserInterface){
+    const slq = `SELECT user_id, user_name, user_password FROM users WHERE user_name = ?`
+    try {
 
+        const [rows] = await dbconnection.query(slq, [userName]);
+
+        if(!rows) console.log("Wrong Credentials!");
+
+        return rows as Array<{ user_id: number; user_name: string; user_password: string }>
+
+    } catch (error) {
+        console.error("Database error:", error);
+        throw error;
+
+    }
 }
