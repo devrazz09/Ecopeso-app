@@ -1,7 +1,8 @@
+import HeroDonationSection from "./hero"
 export default function DonatePage(){
     return(
-        <div>
-            Donate Page
-        </div>
+        <main className="w-full h-fit flex flex-col">
+            <HeroDonationSection />
+        </main>
     )
 }
