@@ -5,6 +5,8 @@
   --foreground: #2C4130;
   --primary: #20612C;
   --secondary: #C5AE2D;
+  --textMainColor: #51D875;
+  --textHighlight: #A9E5B9;
 }
 
 @theme inline {
@@ -12,8 +14,10 @@
   --color-foreground: var(--foreground);
   --color-primary: var(--primary);
   --color-secondary: var(--secondary);
-
+  --color-textMainColor: var(--textMainColor);
+  --color-textHighlight: var(--textHighlight);
   --font-mono: var(--font-poppins-mono);
+
 }
 
 body {

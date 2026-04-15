@@ -12,17 +12,17 @@ const LazyLogo = dynamic( () => import('../components/logo'),
 
 export default function NavBar(){
     return(
-        <nav className="w-full h-22 bg-none fixed top-0">
+        <nav className="w-full h-22 bg-none absolute top-2">
             <div className="w-[90%] h-full m-auto flex justify-between items-center">
                 <LazyLogo />
                 <div className="w-2/4 flex flex-row justify-between items-center">
                     <NavLink href="/">Home</NavLink>
                     <NavLink href="/donate">Donate</NavLink>
-                    <NavLink href="/merchandise">Merchandise</NavLink>
+                    <NavLink href="/merchandise">Merchs</NavLink>
                     <NavLink href="/howitworks">How It Works</NavLink>
                 </div>
-                <div className="w-fit font-mono flex justify-between items-center gap-2">
-                    <button className="py-2 px-6 bg-primary text-white rounded-lg">Sign Up</button>
+                <div className="w-fit font-mono flex justify-between items-center gap-4">
+                    <button className="py-2 px-6 bg-primary border-2 border-primary text-white rounded-lg">Sign Up</button>
                     <button className="py-2 px-8 bg-none border-2 text-white rounded-lg">Log In</button>
                 </div>
             </div>
