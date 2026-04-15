@@ -1,7 +1,8 @@
+import HeroHowItWorksSection from "./hero"
 export default function HowItWorksPage(){
     return(
-        <div>
-            How It works page
-        </div>
+        <main className="w-full h-fit p-2 font-mono">
+            <HeroHowItWorksSection />
+        </main>
     )
 }
