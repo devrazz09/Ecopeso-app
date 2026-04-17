@@ -18,6 +18,14 @@
   --color-textHighlight: var(--textHighlight);
   --font-mono: var(--font-poppins-mono);
 
+  /* --- Marquee Animation --- */
+  @keyframes marquee {
+    from { transform: translateX(0); }
+    to { transform: translateX(-100%); }
+  }
+
+  /* Define the animation utility */
+  --animate-marquee: marquee 30s linear infinite;
 }
 
 body {
@@ -26,6 +34,6 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-::-webkit-scrollbar{
+::-webkit-scrollbar {
   display: none;
 }
