@@ -9,14 +9,14 @@ export default function Footer(){
                         <img src="/logo.png" width={60} height={60} alt="" />
                         <p className="text-4xl font-semibold text-textMainColor">ECO<span className="text-secondary">PESO</span></p>
                     </div>
-                    <p className="text-2xl w-3/4 text-white">Partner with us to plant trees and nurture a healthier planet.</p>
+                    <p className="text-2xl w-3/4 text-white/80">Partner with us to plant trees and nurture a healthier planet.</p>
                 </div>
                 <div className="w-2/3 h-full flex justify-start items-start gap-32">
                     <div className="flex flex-col justify-start items-start gap-4">
                         <div>
                             <p className="text-3xl text-textMainColor">Navigation</p>
                         </div>
-                        <div className="flex flex-col justify-start items-start gap-2 text-2xl text-white">
+                        <div className="flex flex-col justify-start items-start gap-2 text-2xl text-white/80">
                             <Link href={'/'}>Home</Link>
                             <Link href={'/'}>Donate</Link>
                             <Link href={'/'}>Merchs</Link>
@@ -27,7 +27,7 @@ export default function Footer(){
                         <div>
                             <p className="text-3xl text-textMainColor">About</p>
                         </div>
-                        <div className="flex flex-col justify-start items-start gap-2 text-2xl text-white">
+                        <div className="flex flex-col justify-start items-start gap-2 text-2xl text-white/80">
                             <Link href={'/'}>Mission & Vission</Link>
                             <Link href={'/'}>About Ecopeso</Link>
                             <Link href={'/'}>Our Story</Link>
@@ -38,7 +38,7 @@ export default function Footer(){
                         <div>
                             <p className="text-3xl text-textMainColor">Contacts</p>
                         </div>
-                        <div className="flex flex-col justify-start items-start gap-2 text-2xl text-white">
+                        <div className="flex flex-col justify-start items-start gap-2 text-2xl text-white/80">
                             <Link href={'/'}>Facebook</Link>
                             <Link href={'/'}>Twitter</Link>
                             <Link href={'/'}>Youtube</Link>
